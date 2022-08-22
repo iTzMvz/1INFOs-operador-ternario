@@ -8,11 +8,14 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
-
+    const precooriginal = Number(prompt("Informe o preco original do produto:"));
+    let preconovo;
     //Processamento
-
+    (precooriginal <= 280) ? preconovo = precooriginal + (precooriginal * 0.20)
+    :(precooriginal <= 700) ? preconovo = precooriginal + (precooriginal * 0.15)
+    :(precooriginal <= 1500) ? preconovo = precooriginal + (precooriginal * 0.10)
+    : preconovo = precooriginal + (precooriginal * 0.05);
     
     //Saída
-
+    document.write(`O novo preço será R$${preconovo}`)
 </script>

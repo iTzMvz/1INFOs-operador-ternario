@@ -10,11 +10,14 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-
+    const notaboa = Number(prompt("Informe a sua nota"));
 
     //Processamento
-
-    
+    (notaboa <= 5.9) ? document.write(`Isso é um E`)
+    :(notaboa <= 6.9) ? document.write(`Isso é um D`)
+    :(notaboa <= 7.9) ? document.write(`Isso é um C`)
+    :(notaboa <= 8.9) ? document.write(`Isso é um B`)
+    : document.write(`Isso é um A`);
     //Saída
 
 </script>

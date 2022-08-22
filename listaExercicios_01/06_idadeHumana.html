@@ -8,11 +8,16 @@
     // - cães grandes: fator 7.
 
     //Entrada
-
-
+    const idadereal = parseInt(prompt("Informe a idade do seu cachorro"));
+    const porte = prompt("Informe o porte do seu cachorro (p-Pequeno, m-Médio, g-Grande):");
+    let idadecachorro;
     //Processamento
-
+    (porte =="p") ? idadecachorro = idadereal * 5
+    :(porte == "m") ? idadecachorro = idadereal * 6
+    :(porte == "g") ? idadecachorro = idadereal * 7
+    : document.write(`Por que você digitou essa letra seu imbecil?`);
+ 
     
     //Saída
-
+    document.write(`A idade verdadeira do seu cachorro é ${idadecachorro}`);
 </script>

@@ -8,11 +8,23 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
-
+    const horastraba = Number(prompt("Horras trabalhadas"));
+    const quantoreceebehora = Number(prompt("Recebe hora"));
     //Processamento
+    let percentualAdicional;
 
-    
+    (horastraba <= 45) ? percentualAdicional = 0 
+    : (horastraba <= 60) ? percentualAdicional = 20
+    : percentualAdicional = 30;
+
+
+
+    const salariosemana = horastraba * quantoreceebehora;
+    const valoradd = salariosemana * (percentualAdicional / 100);
+    const salariofinal = salariosemana + valoradd;
+    const novahora = salariofinal / horastraba;
+
     //Saída
-
+    document.write(`O salário final será ${salariofinal.toFixed(2)} e o valor por hora de trabalho é de R$${novahora.toFixed(2)}`);
+     
 </script>
